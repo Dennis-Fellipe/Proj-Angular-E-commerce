@@ -1,0 +1,26 @@
+<header class="main-header">
+    <h1 class="main-header__title">
+        <span class="main-header__title--blue">E-Commerce </span><span
+            class="main-header__title--orange">Computers</span>
+    </h1>
+    <div class="container-menu">
+        <nav class="main-header__menu">
+            <ul>
+                <li>
+                    <a routerLink="/carrinho">
+                        <i class="fi fi-sr-shopping-cart"></i>
+                        Carrinho
+                        <span class="badge-carrinho">{{carrinhoService.obtemCarrinho().length}}</span>
+                    </a>
+                </li>
+                <li><a href="">Produtos</a></li>
+                <li><a routerLink="/contato">Contato</a></li>
+                
+                <li><a href=""><i class="fi fi-brands-facebook"></i></a></li>
+                <li><a href=""><i class="fi fi-brands-instagram"></i></a></li>
+                <li><a href=""><i class="fi fi-brands-twitter"></i></a></li>
+            </ul>
+        </nav>
+        <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
+</header>
